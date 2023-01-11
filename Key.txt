@@ -1,0 +1,9 @@
+22/11/2022
+intl.numberformat w3schools
+truly and falsy
+copy deep array javascript
+tham trị và tham chiếu f8
+//https://www.notion.so/e2487dc1358d40ed9d906011b8658bdd?v=059550fa3bdd4afd85a623152506e20e
+//https://demo.nlt-group.com/admin/dashboards/fire-follow
+npm run serve
+//https://bootstrap-vue.org/docs/components/form/#form

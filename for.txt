@@ -1,0 +1,78 @@
+for(let of giaTri){
+ lấy giá tri}
+for(let in giaTri){
+ lấy giá vị trí giá trị}
+
+var topics = [
+  {
+    topic :"fornt-end",
+    courses: [
+      {
+        id:1,
+        title: "HTML"
+      },
+      {
+        id:2,
+        title: "SQL"
+      }
+    ]
+  },
+  {
+    topic :"fornt-end",
+    courses: [
+      {
+        id:1,
+        title: "HTML"
+      },
+      {
+        id:2,
+        title: "SQL"
+      }
+    ]
+}];
+
+let arr = []
+console.log(arr)
+for (let i = 0; i < topics.length; i++) {
+  const obj = topics[i];
+  const coursesArr = obj.courses
+  arr = [...arr, ...coursesArr]
+  console.log(arr)
+}
+console.log(arr)
+
+let mystring_num = "1\n2\n 3,4,5";
+let arrayStrig1 = mystring_num.split("\n");
+console.log(arrayStrig1);
+
+
+var topics = [    
+    {
+        id:1,
+        data:[{
+        name:'NguyenThu',
+        thongTin:'Bác sĩ Cơ Xương Khớp giỏi.\r\nDanh sách các bác sĩ uy tín đầu ngành Cơ Xương Khớp tại Việt Nam:\r\n\r\nCác chuyên gia có quá trình đào tạo bài bản, nhiều kinh nghiệm.\r\nCác giáo sư, phó giáo sư đang trực tiếp nghiên cứu và giảng dạy tại Đại học Y khoa Hà Nội.\r\nCác bác sĩ đã, đang công tác tại các bệnh viện hàng đầu Khoa Cơ Xương Khớp - Bệnh viện Bạch Mai, Bệnh viện Hữu nghị Việt Đức,Bệnh Viện E.\r\nLà thành viên hoặc lãnh đạo các tổ chức chuyên môn như: Hiệp hội Cơ Xương Khớp, Hội Thấp khớp học,...\r\nĐược nhà nước công nhận các danh hiệu Thầy thuốc Nhân dân, Thầy thuốc Ưu tú, Bác sĩ Cao cấp,...\r\nBệnh Cơ Xương Khớp\r\nGout\r\nThoái hóa khớp: khớp gối, cột sống thắt lưng, cột sống cổ.\r\nViêm khớp dạng thấp, Viêm đa khớp, Viêm gân.\r\nTràn dịch khớp gối, Tràn dịch khớp háng, Tràn dịch khớp khủy, Tràn dịch khớp vai\r\nLoãng xương, đau nhức xương.\r\nViêm xương, gai xương.\r\nViêm cơ, Teo cơ, chứng đau mỏi cơ.\r\nYếu cơ, Loạn dưỡng cơ.\r\nCác chấ'}]
+  },
+  {
+    id:2,
+    data:[{
+    name:'NT',
+    thongTin:'Bác sĩ Cơ Xương Khớp giỏi.\r\nDanh sách các bác sĩ uy tín đầu ngành Cơ Xương Khớp tại Việt Nam:\r\n\r\nCác chuyên gia có quá trình đào tạo bài bản, nhiều kinh nghiệm.\r\nCác giáo sư, phó giáo sư đang trực tiếp nghiên cứu và giảng dạy tại Đại học Y khoa Hà Nội.\r\nCác bác sĩ đã, đang công tác tại các bệnh viện hàng đầu Khoa Cơ Xương Khớp - Bệnh viện Bạch Mai, Bệnh viện Hữu nghị Việt Đức,Bệnh Viện E.\r\nLà thành viên hoặc lãnh đạo các tổ chức chuyên môn như: Hiệp hội Cơ Xương Khớp, Hội Thấp khớp học,...\r\nĐược nhà nước công nhận các danh hiệu Thầy thuốc Nhân dân'}]
+}
+];
+
+  let arr = []
+  for (let i = 0; i < topics.length; i++) {
+    const obj = topics[i];
+    const thongTinArr = obj.thongTin
+    arr = [...arr, ...thongTinArr]
+    console.log(arr)
+  }
+  console.log(arr)
+
+  // Update header text
+document.querySelector('#header').innerHTML = topics
+
+// Log to console
+console.log(topics);
+  
