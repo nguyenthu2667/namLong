@@ -1,0 +1,296 @@
+<template>
+  <div id="app-content-full">
+    <b-card>
+      <FormBasicNPL
+        :title="'ĐIỀU CHỈNH Tăng'"
+        :fields="fieldsTable"
+        :items="dataTable"
+        :optionByKey="options"
+        :fieldsForm="fieldsForm"
+        :titleOptions="['Điều chỉnh tăng', 'Điều chỉnh giảm']"
+      ></FormBasicNPL>
+    </b-card>
+  </div>
+</template>
+
+<script>
+import FormBasicNPL from "@/containers/npl/FormBasicNPL.vue";
+export default {
+  components: {
+    FormBasicNPL,
+  },
+  data() {
+    return {
+      fieldsTable: [
+        {
+          key: "ID",
+          label: "Mã CT",
+        },
+        {
+          key: "createDate",
+          label: "Ngày CT",
+        },
+        {
+          key: "NghiepVu",
+          label: "Nghiệp vụ",
+        },
+        {
+          key: "ThangNam",
+          label: "Tháng",
+        },
+        {
+          key: "LuongTaiXe",
+          label: "Số tiền",
+        },
+        {
+          key: "LiDo",
+          label: "Lí do",
+        },
+        {
+          key: "TaiXe",
+          label: "Tài xế",
+        },
+        {
+          key: "SDT",
+          label: "Điện thoại",
+        },
+        {
+          key: "DiaChi",
+          label: "Địa chỉ",
+        },
+        {
+          key: "GhiChu",
+          label: "Ghi chú",
+        },
+        {
+          key: "statusName",
+          label: "Trạng thái",
+        },
+      ],
+      fieldsForm: [
+        {
+          key: "ID",
+          label: "Mã CT",
+          col: 2,
+        },
+        {
+          key: "createDate",
+          label: "Ngày CT",
+          col: 2,
+        },
+        {
+          col: 8,
+          type: "hide",
+        },
+        {
+          key: "TaiXe",
+          label: "Tài xế",
+          col: 2,
+        },
+        {
+          key: "SDT",
+          label: "Điện thoại",
+          col: 2,
+        },
+        {
+          key: "DiaChi",
+          label: "Địa chỉ",
+          col: 4,
+        },
+        {
+          col: 4,
+          type: "hide",
+        },
+        {
+          key: "ThangNam",
+          label: "Tháng",
+          col: 2,
+          type: "select",
+        },
+        {
+          key: "LuongTaiXe",
+          label: "Số tiền",
+          col: 2,
+        },
+        {
+          key: "LiDo",
+          label: "Lí do",
+          col: 4,
+        },
+        {
+          col: 4,
+          type: "hide",
+        },
+        {
+          key: "GhiChu",
+          label: "Ghi chú",
+          type: "note",
+          col: 8,
+        },
+      ],
+      dataTable: [
+        {
+          SLVD: "2",
+          MaDH: "DH001",
+          ID: "DCLTX/001",
+          DiaChi: "Quốc lộ 1A, Nguyễn văn trỗi, Bình tân",
+          KhachHang: "Công ty A",
+          BSX: "59P1-12347",
+          createDate: "11/12/2022",
+          SoLuongXe: "2 xe",
+          TuNgay: "12/01/2022",
+          DenNgay: "12/30/2022",
+          LayCont: "20 Cát Lái, Đồng Nai",
+          PhiHa: "100,000",
+          TaiXe: "Nguyễn Văn A",
+          SDT: "0961421396",
+          PhiNang: "300,000",
+          HinhThucChi: "Chuyển khoản",
+          HaCont: "Debot Tân Thuận, 12 Tân Thuận, HCM",
+          TuyenDuong: "SG-LA (Sài gòn - Long an)",
+          SoPhieuChi: "SP12345",
+          SoTienDaChi: "300,000",
+          PhiThang: "700,000",
+          TongTien: "600,000",
+          TongTienPC: "600,000",
+          MaCT: "DCLTX/001",
+          MaVD: "VD/22/001",
+          NgayCT: "11/12/2022",
+          SoLuongVD: "2",
+          SoLuot: "2",
+          GhiChu: "...",
+          statusName: "Chờ khóa",
+          statusColor: "orange",
+          GiaVanChuyen: "500,000",
+          PhiCauDuong: "100,000",
+          PhiNangHa: "100,000",
+          PhiPhatSinh: "50,000",
+          DTPS: "300,000",
+          PhiKhoan: "100,000",
+          PhiKhac: "50,000",
+          LuongTaiXe: "10,000,000",
+          PhuCap: "500,000",
+          ChungTuGoc: true,
+          SLVT: "5Cuộn (30tấn)",
+          NguoiGiao: "Nguyễn văn giao",
+          NguoiNhan: "Lê văn nhận",
+          NghiepVu: "Đ/c Tăng",
+          ThangNam: "12/2022",
+          LiDo: "Thưởng hiệu suất chuyến",
+        },
+        {
+          SLVD: "2",
+          MaDH: "DH002",
+          ID: "DCLTX/002",
+          DiaChi: "Hưng lộ 2, Tân phú, Tân Bình, HCM",
+          KhachHang: "Công ty B",
+          BSX: "59P1-12346",
+          createDate: "11/12/2022",
+          TuNgay: "12/01/2022",
+          DenNgay: "12/30/2022",
+          SoLuongXe: "2 xe",
+          LayCont: "20 Cát Lái, Đồng Nai",
+          PhiHa: "100,000",
+          TaiXe: "Nguyễn Văn B",
+          SDT: "0961421397",
+          PhiNang: "300,000",
+          HinhThucChi: "Tiền mặt",
+          HaCont: "Debot Tân Thuận, 12 Tân Thuận, HCM",
+          TuyenDuong: "CL-LA (Cát Lái - Long An)",
+          SoPhieuChi: "SP12346",
+          SoTienDaChi: "300,000",
+          PhiThang: "500,000",
+          TongTien: "500,000",
+          TongTienPC: "600,000",
+          MaCT: "DCLTX/002",
+          MaVD: "VD/22/002",
+          NgayCT: "11/12/2022",
+          SoLuongVD: "2",
+          SoLuot: "2",
+          GhiChu: "...",
+          statusName: "Đã khóa",
+          statusColor: "red",
+          GiaVanChuyen: "500,000",
+          PhiCauDuong: "100,000",
+          PhiNangHa: "100,000",
+          PhiPhatSinh: "50,000",
+          DTPS: "300,000",
+          PhiKhoan: "100,000",
+          PhiKhac: "50,000",
+          LuongTaiXe: "10,000,000",
+          PhuCap: "500,000",
+          ChungTuGoc: false,
+          SLVT: "5Cuộn (30tấn)",
+          NguoiGiao: "Nguyễn văn A",
+          NguoiNhan: "Lê văn luyện",
+          NghiepVu: "Đ/c Giảm",
+          ThangNam: "12/2022",
+          LiDo: "Nghỉ phép 1 ngày",
+        },
+        {
+          SLVD: "2",
+          MaDH: "DH003",
+          ID: "DCLTX/003",
+          DiaChi: "Quốc lộ 1A, Nguyễn văn trỗi, Bình tân",
+          KhachHang: "Công ty C",
+          LayCont: "20 Cát Lái, Đồng Nai",
+          PhiHa: "100,000",
+          BSX: "59P1-12345",
+          createDate: "11/12/2022",
+          TuNgay: "12/01/2022",
+          DenNgay: "12/30/2022",
+          SoLuongXe: "2 xe",
+          TaiXe: "Nguyễn Văn C",
+          SDT: "0961421398",
+          PhiNang: "300,000",
+          HinhThucChi: "Chuyển khoản",
+          HaCont: "Debot Tân Thuận, 12 Tân Thuận, HCM",
+          TuyenDuong: "CL-SG (Cát Lái - Sài Gòn)",
+          SoPhieuChi: "SP12347",
+          SoTienDaChi: "300,000",
+          PhiThang: "700,000",
+          TongTien: "400,000",
+          TongTienPC: "600,000",
+          MaCT: "DCLTX/003",
+          MaVD: "VD/22/003",
+          NgayCT: "11/12/2022",
+          SoLuongVD: "2",
+          SoLuot: "2",
+          GhiChu: "...",
+          statusName: "Chờ khóa",
+          statusColor: "orange",
+          GiaVanChuyen: "500,000",
+          PhiCauDuong: "100,000",
+          PhiNangHa: "100,000",
+          PhiPhatSinh: "50,000",
+          DTPS: "300,000",
+          PhiKhoan: "100,000",
+          PhiKhac: "50,000",
+          LuongTaiXe: "10,000,000",
+          PhuCap: "500,000",
+          ChungTuGoc: true,
+          SLVT: "5Cuộn (30tấn)",
+          NguoiGiao: "Nguyễn văn C",
+          NguoiNhan: "Trần trung hiếu",
+          NghiepVu: "Đ/c Tăng",
+          ThangNam: "12/2022",
+          LiDo: "Nghỉ phép quá 2 ngày",
+        },
+      ],
+      options: {
+        ThangNam: [
+          "12/2022",
+          "11/2022",
+          "10/2022",
+          "09/2022",
+          "08/2022",
+          "07/2022",
+        ],
+      },
+    };
+  },
+};
+</script>
+
+<style lang="scss" scoped>
+</style>

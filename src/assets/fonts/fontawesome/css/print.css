@@ -1,0 +1,213 @@
+.sheet-custom-input {
+  padding: unset !important;
+  border: unset !important;
+  background-color: #d6d6d6 !important;
+}
+.sheet-d-flex {
+  display: flex;
+}
+
+#print-template {
+  font-size: 40px;
+}
+
+.sheet-width-input {
+  width: 100%;
+}
+
+.sheet-width-input-small {
+  width: 100px;
+}
+
+.sheet-d-flex sup {
+  top: 0.5em !important;
+}
+
+.font-custom-general {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  white-space: nowrap;
+}
+
+.font-18 {
+  font-size: 15px;
+}
+
+.font-17 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 13px;
+}
+
+.font-15 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 12px;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+.ml-1 {
+  margin-left: 2px;
+}
+
+.ml-4 {
+  margin-left: 8px;
+}
+
+.mb-2 {
+  margin-bottom: 4px;
+}
+
+.mt-2 {
+  margin-top: 4px;
+}
+
+.pl-1 {
+  padding-left: 2px;
+}
+
+.border-r-1 {
+  border-right: 1px solid black;
+}
+
+.border-b-1 {
+  border-bottom: 1px solid black;
+}
+
+.border-t-1 {
+  border-top: 1px solid black;
+}
+
+.border-l-1 {
+  border-left: 1px solid black;
+}
+
+.border-1 {
+  border: 1px solid black;
+}
+
+.border-collapse {
+  border-collapse: collapse;
+}
+.flex-1 {
+  flex: 1;
+}
+
+.print-img {
+  height: 180px !important;
+}
+
+@page {
+  size: auto;
+  margin: 0mm;
+}
+
+html {
+  background-color: #ffffff;
+  margin: 0px;
+}
+body {
+  margin: 10mm 15mm 10mm 15mm;
+}
+
+.sheet-header-left {
+  width: 70%;
+}
+
+.sheet-header-right {
+  width: 30%;
+}
+
+.mt-sheet-2 {
+  margin-top: 8px;
+}
+
+.sheet-width-33 {
+  width: 33.33%;
+}
+
+.sheet-width-13 {
+  width: 13.33%;
+}
+
+.sheet-width-11 {
+  width: 11.11%;
+}
+
+.sheet-width-66 {
+  width: 66.66%;
+}
+
+.height-100 {
+  height: 100%;
+}
+
+.sheet-width-25 {
+  width: 25%;
+}
+
+.sheet-width-50 {
+  width: 50%;
+}
+
+.sheet-width-45 {
+  width: 45%;
+}
+
+.sheet-width-55 {
+  width: 55%;
+}
+
+.sheet-relative {
+  position: relative;
+}
+
+.sheet-relative-right {
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.sheet-justify-space-between {
+  justify-content: space-between;
+}
